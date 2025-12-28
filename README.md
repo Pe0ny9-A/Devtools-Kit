@@ -219,14 +219,20 @@ Vue-Project/
 
 ### GitHub Pages
 
-1. 构建项目：
+项目已配置 GitHub Actions 自动部署。
+
+**访问地址**：https://pe0ny9-a.github.io/devtools-kit/
+
+**手动触发部署**：
+1. 前往 GitHub 仓库的 Actions 页面
+2. 选择 "Deploy to GitHub Pages" 工作流
+3. 点击 "Run workflow" 手动触发
+
+**本地构建测试**：
 ```bash
 npm run build
+npm run preview
 ```
-
-2. 在 `vite.config.ts` 中设置 `base: '/your-repo-name/'`
-
-3. 将 `dist` 目录内容推送到 `gh-pages` 分支
 
 ### Vercel
 
