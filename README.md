@@ -363,7 +363,5 @@ Made with ❤️ by [Pe0ny9](https://github.com/Pe0ny9-A)
 
 [![GitHub followers](https://img.shields.io/github/followers/Pe0ny9-A?label=Follow%20%40Pe0ny9-A&style=social)](https://github.com/Pe0ny9-A)
 
-Copyright © 2025 Pe0ny9. All rights reserved.
-
 </div>
 
