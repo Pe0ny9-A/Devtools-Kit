@@ -221,7 +221,7 @@ Vue-Project/
 
 项目已配置 GitHub Actions 自动部署。
 
-**访问地址**：https://pe0ny9-a.github.io/devtools-kit/
+**访问地址**：https://pe0ny9-a.github.io/Devtools-Kit/
 
 **手动触发部署**：
 1. 前往 GitHub 仓库的 Actions 页面
