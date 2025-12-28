@@ -2,14 +2,24 @@
 
 <div align="center">
 
-![Vue](https://img.shields.io/badge/Vue-3.4-4FC08D?style=flat-square&logo=vue.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript)
-![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+# ⚡ DevToolsKit
 
 **一个现代化的零代码工具平台，集合多种实用开发工具**
 
-[功能特性](#功能特性) • [快速开始](#快速开始) • [使用指南](#使用指南) • [部署](#部署)
+[![GitHub stars](https://img.shields.io/github/stars/Pe0ny9-A/Devtools-Kit?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=gold)](https://github.com/Pe0ny9-A/Devtools-Kit/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Pe0ny9-A/Devtools-Kit?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=blue)](https://github.com/Pe0ny9-A/Devtools-Kit/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/Pe0ny9-A/Devtools-Kit?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=orange)](https://github.com/Pe0ny9-A/Devtools-Kit/issues)
+[![GitHub license](https://img.shields.io/github/license/Pe0ny9-A/Devtools-Kit?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=green)](https://github.com/Pe0ny9-A/Devtools-Kit/blob/main/LICENSE)
+
+![Vue](https://img.shields.io/badge/Vue-3.4-4FC08D?style=flat-square&logo=vue.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Pe0ny9-A/Devtools-Kit?style=flat-square&logo=github&logoColor=white&labelColor=181717)](https://github.com/Pe0ny9-A/Devtools-Kit/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Pe0ny9-A/Devtools-Kit?style=flat-square&logo=github&logoColor=white&labelColor=181717)](https://github.com/Pe0ny9-A/Devtools-Kit)
+
+[⭐ Star](https://github.com/Pe0ny9-A/Devtools-Kit/stargazers) • [🍴 Fork](https://github.com/Pe0ny9-A/Devtools-Kit/network/members) • [🐛 Issues](https://github.com/Pe0ny9-A/Devtools-Kit/issues) • [💬 Discussions](https://github.com/Pe0ny9-A/Devtools-Kit/discussions)
+
+[功能特性](#-功能特性) • [快速开始](#-快速开始) • [使用指南](#-使用指南) • [技术栈](#️-技术栈)
 
 </div>
 
@@ -17,7 +27,7 @@
 
 ## ✨ 功能特性
 
-DevToolsKit 是一个纯前端的零代码工具平台，包含以下6个核心工具：
+DevToolsKit 是一个纯前端的零代码工具平台，集合了多种实用的开发工具，所有功能均在浏览器中运行，无需后端支持。
 
 ### 🔌 API 测试工具
 - 可视化HTTP请求构建器（支持GET/POST/PUT/DELETE等）
@@ -66,6 +76,46 @@ DevToolsKit 是一个纯前端的零代码工具平台，包含以下6个核心�
 - 数据验证和错误提示
 - 大文件处理
 - 数据预览和导出
+
+### 🔐 编码/解码工具
+- Base64 编码/解码
+- URL 编码/解码
+- 实时转换预览
+
+### ⏰ 时间戳转换工具
+- Unix 时间戳 ↔ 日期时间互转
+- 支持秒级和毫秒级时间戳
+- 时区转换
+
+### 🆔 UUID/GUID 生成器
+- 生成标准 UUID v4
+- 批量生成
+- 复制到剪贴板
+
+### 🔒 哈希生成器
+- 支持 MD5、SHA1、SHA256、SHA512
+- 实时计算哈希值
+- 文件哈希计算
+
+### 🎨 颜色转换工具
+- HEX ↔ RGB ↔ HSL 互转
+- 颜色选择器
+- 颜色预览
+
+### 📱 二维码生成器
+- 文本/URL 转二维码
+- 自定义尺寸和容错级别
+- 下载二维码图片
+
+### 📊 文本差异对比
+- 并排对比两个文本
+- 高亮显示差异
+- 支持代码和普通文本
+
+### 💻 代码格式化工具
+- 支持多种语言（JavaScript、TypeScript、JSON、CSS、SQL、HTML、Markdown等）
+- 自动格式化
+- 语法验证
 
 ## 🎨 设计特色
 
@@ -175,78 +225,74 @@ yarn preview
 
 ## 🛠️ 技术栈
 
-- **框架**: Vue 3 + TypeScript
-- **构建工具**: Vite
-- **路由**: Vue Router
-- **状态管理**: Pinia
-- **UI组件**: Element Plus
-- **代码编辑器**: Monaco Editor
-- **Markdown渲染**: marked + highlight.js
-- **图表**: Mermaid.js
-- **数学公式**: KaTeX
-- **CSV处理**: PapaParse
-- **SQL格式化**: sql-formatter
+### 核心框架
+- **Vue 3** - 渐进式 JavaScript 框架
+- **TypeScript** - 类型安全的 JavaScript 超集
+- **Vite** - 下一代前端构建工具
+
+### 主要依赖
+- **Vue Router** - 官方路由管理器
+- **Pinia** - Vue 状态管理库
+- **Element Plus** - Vue 3 UI 组件库
+- **Monaco Editor** - 代码编辑器（VS Code 编辑器核心）
+
+### 功能库
+- **marked** - Markdown 解析器
+- **highlight.js** - 代码语法高亮
+- **mermaid** - 图表和流程图
+- **katex** - 数学公式渲染
+- **papaparse** - CSV 解析
+- **sql-formatter** - SQL 格式化
+- **regexp-tree** - 正则表达式解析
+- **qrcode** - 二维码生成
+- **crypto-js** - 加密哈希算法
+- **uuid** - UUID 生成
+- **diff** - 文本差异对比
+- **prettier** - 代码格式化
 
 ## 📁 项目结构
 
 ```
-Vue-Project/
-├── public/              # 静态资源
+devtools-kit/
+├── public/                 # 静态资源
 ├── src/
-│   ├── assets/         # 资源文件
-│   │   └── styles/     # 全局样式
-│   ├── components/     # 公共组件
-│   │   ├── Layout/     # 布局组件
-│   │   └── common/     # 通用组件
-│   ├── views/         # 页面视图
-│   │   ├── Home.vue
-│   │   ├── ApiTester/
-│   │   ├── SqlBuilder/
-│   │   ├── FormBuilder/
-│   │   ├── MarkdownEditor/
-│   │   ├── RegexTester/
-│   │   └── JsonConverter/
-│   ├── stores/         # Pinia状态管理
-│   ├── utils/          # 工具函数
-│   ├── types/          # TypeScript类型
-│   └── router/         # 路由配置
+│   ├── assets/            # 资源文件
+│   │   └── styles/        # 全局样式
+│   ├── components/        # 公共组件
+│   │   ├── Layout/        # 布局组件
+│   │   │   ├── AppHeader.vue
+│   │   │   └── AppFooter.vue
+│   │   ├── common/        # 通用组件
+│   │   │   ├── CodeEditor.vue
+│   │   │   └── ErrorBoundary.vue
+│   │   └── ToolCard.vue
+│   ├── views/             # 页面视图
+│   │   ├── Home.vue       # 首页
+│   │   ├── ApiTester/     # API 测试工具
+│   │   ├── SqlBuilder/    # SQL 构建器
+│   │   ├── FormBuilder/   # 表单构建器
+│   │   ├── MarkdownEditor/ # Markdown 编辑器
+│   │   ├── RegexTester/    # 正则表达式工具
+│   │   ├── JsonConverter/  # JSON/CSV 转换
+│   │   ├── Encoder/        # 编码/解码工具
+│   │   ├── Timestamp/      # 时间戳转换
+│   │   ├── UuidGenerator/  # UUID 生成器
+│   │   ├── HashGenerator/  # 哈希生成器
+│   │   ├── ColorConverter/ # 颜色转换
+│   │   ├── QrCodeGenerator/ # 二维码生成
+│   │   ├── TextDiff/       # 文本差异对比
+│   │   └── CodeFormatter/  # 代码格式化
+│   ├── stores/            # Pinia 状态管理
+│   ├── utils/             # 工具函数
+│   ├── types/             # TypeScript 类型定义
+│   └── router/            # 路由配置
+├── .github/
+│   └── workflows/         # GitHub Actions
 ├── package.json
 ├── vite.config.ts
 └── README.md
 ```
 
-## 🚢 部署
-
-### GitHub Pages
-
-项目已配置 GitHub Actions 自动部署。
-
-**访问地址**：https://pe0ny9-a.github.io/Devtools-Kit/
-
-**手动触发部署**：
-1. 前往 GitHub 仓库的 Actions 页面
-2. 选择 "Deploy to GitHub Pages" 工作流
-3. 点击 "Run workflow" 手动触发
-
-**本地构建测试**：
-```bash
-npm run build
-npm run preview
-```
-
-### Vercel
-
-1. 连接GitHub仓库到Vercel
-2. 设置构建命令：`npm run build`
-3. 设置输出目录：`dist`
-4. 部署
-
-### Netlify
-
-1. 连接GitHub仓库到Netlify
-2. 设置构建命令：`npm run build`
-3. 设置发布目录：`dist`
-4. 部署
 
 ## 🤝 贡献指南
 
@@ -281,18 +327,41 @@ npm run preview
 
 ## 📧 联系方式
 
-- **开发者**: Pe0ny9
-- **GitHub**: [@Pe0ny9-A](https://github.com/Pe0ny9-A)
-- **Email**: pikachu237325@163.com
-- **问题反馈**: 请提交 [Issue](https://github.com/Pe0ny9-A/devtools-kit/issues)
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Pe0ny9--A-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pe0ny9-A)
+[![Email](https://img.shields.io/badge/Email-pikachu237325@163.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pikachu237325@163.com)
+
+**开发者**: [Pe0ny9](https://github.com/Pe0ny9-A)  
+**问题反馈**: [提交 Issue](https://github.com/Pe0ny9-A/Devtools-Kit/issues) • [参与讨论](https://github.com/Pe0ny9-A/Devtools-Kit/discussions)
+
+</div>
 
 ---
 
 <div align="center">
 
-**如果这个项目对你有帮助，请给个 ⭐ Star！**
+## ⭐ 如果这个项目对你有帮助，请给个 Star！
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Pe0ny9-A/Devtools-Kit&type=Date)](https://star-history.com/#Pe0ny9-A/Devtools-Kit&Date)
+
+---
+
+### 🌟 Star 这个项目
+
+如果你觉得这个项目有用，请考虑：
+
+- ⭐ **Star** 这个仓库
+- 🍴 **Fork** 这个项目
+- 🐛 提交 **Issue** 报告问题
+- 💡 提交 **Pull Request** 贡献代码
+- 📢 分享给其他开发者
+
+---
 
 Made with ❤️ by [Pe0ny9](https://github.com/Pe0ny9-A)
+
+[![GitHub followers](https://img.shields.io/github/followers/Pe0ny9-A?label=Follow%20%40Pe0ny9-A&style=social)](https://github.com/Pe0ny9-A)
 
 Copyright © 2025 Pe0ny9. All rights reserved.
 
