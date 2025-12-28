@@ -40,6 +40,22 @@
           </template>
         </el-dropdown>
       </nav>
+      
+      <!-- GitHub 按钮区域 -->
+      <div class="header-actions">
+        <a
+          href="https://github.com/Pe0ny9-A/Devtools-Kit"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-link"
+          title="GitHub"
+        >
+          <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span class="github-text">GitHub</span>
+        </a>
+      </div>
     </div>
   </header>
 </template>
@@ -121,6 +137,51 @@ const moreTools = ref<Tool[]>([
   gap: var(--spacing-sm);
   flex: 1;
   justify-content: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.github-link:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.3), 0 0 30px rgba(102, 126, 234, 0.1);
+}
+
+.github-link:hover .github-icon {
+  filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.6));
+  color: var(--primary);
+  transform: rotate(360deg);
+}
+
+.github-icon {
+  width: 18px;
+  height: 18px;
+  transition: all 0.3s ease;
+  color: currentColor;
+}
+
+.github-text {
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .nav-item {
@@ -253,6 +314,14 @@ const moreTools = ref<Tool[]>([
   .nav-item {
     padding: var(--spacing-sm);
   }
+  
+  .github-text {
+    display: none;
+  }
+  
+  .github-link {
+    padding: var(--spacing-sm);
+  }
 }
 
 @media (max-width: 768px) {
@@ -269,6 +338,15 @@ const moreTools = ref<Tool[]>([
   
   .nav-text {
     display: none;
+  }
+  
+  .header-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .github-text {
+    display: inline;
   }
 }
 </style>
