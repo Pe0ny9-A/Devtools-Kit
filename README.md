@@ -28,6 +28,7 @@
 ## ✨ 功能特性
 
 DevToolsKit 是一个纯前端的零代码工具平台，集合了多种实用的开发工具，所有功能均在浏览器中运行，无需后端支持。
+![IMG](https://github.com/Pe0ny9-A/Devtools-Kit/blob/main/screenshot/Screenshot.PNG)
 
 ### 🔌 API 测试工具
 - 可视化HTTP请求构建器（支持GET/POST/PUT/DELETE等）
